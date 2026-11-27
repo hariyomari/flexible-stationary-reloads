@@ -1,0 +1,4 @@
+Checks: "misc-include-cleaner"
+CheckOptions:
+  misc-include-cleaner.IgnoreHeaders: 'hellforge_.*\.h'
+RemovedArgs: ["-fsanitize=address", "/fsanitize=address"]

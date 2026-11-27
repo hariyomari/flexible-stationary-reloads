@@ -1,0 +1,42 @@
+# Build folders
+/build/
+/out/
+cmake-build-*/
+
+# Output files
+*.dll
+
+# Game binaries and IDA databases
+research/bin/
+*.i64
+*.id0
+*.id1
+*.id2
+*.nam
+*.til
+
+# Release archives
+dist/
+
+# CMake
+CMakeUserPresets.json
+/compile_commands.json
+
+# Tools
+/.cache/
+
+# IDEs
+.idea/
+.vs/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# OS files
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+
+# Miscellaneous
+_*

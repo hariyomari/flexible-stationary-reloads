@@ -1,0 +1,13 @@
+{
+  "format": 1,
+  "id": "hariyomari.flexible-stationary-reloads",
+  "name": "Flexible Stationary Reloads",
+  "version": "0.1.0",
+  "description": "Allows stationary reloads in more situations: while airborne with a jump pack, while falling, and while diving. It used to be in the game until Arrowhead removed it as a \"bug fix\".",
+  "icon": "icon.png",
+  "gameplay": true,
+  "code": {
+    "dll": "flexible-stationary-reloads.dll",
+    "sdk": 16
+  }
+}

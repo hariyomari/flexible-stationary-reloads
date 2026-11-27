@@ -1,0 +1,27 @@
+BasedOnStyle: Microsoft
+AllowAllArgumentsOnNextLine: false
+AlwaysBreakTemplateDeclarations: "Yes"
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortLambdasOnASingleLine: All
+BinPackArguments: false
+BinPackParameters: OnePerLine
+BraceWrapping:
+  BeforeLambdaBody: true
+BreakBeforeBraces: Allman
+ColumnLimit: 100
+IndentCaseLabels: true
+InsertNewlineAtEOF: true
+PointerAlignment: Left
+ReflowComments: IndentOnly
+SpaceInEmptyBraces: Block
+IncludeBlocks: Regroup
+IncludeCategories:
+  # project
+  - Regex: '^"'
+    Priority: 1
+  # standard library
+  - Regex: "^<[a-z_]+>$"
+    Priority: 3
+  # dependencies and os
+  - Regex: "^<"
+    Priority: 2

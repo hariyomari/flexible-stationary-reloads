@@ -1,0 +1,27 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": { "major": 3, "minor": 25, "patch": 0 },
+  "configurePresets": [
+    {
+      "name": "base",
+      "hidden": true,
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "cacheVariables": { "CMAKE_BUILD_TYPE": "Release" }
+    },
+    {
+      "name": "default",
+      "inherits": "base",
+      "toolchainFile": "$env{HELLFORGE}/app/sdk/cmake/HellForgeToolchain.cmake"
+    },
+    {
+      "name": "edit",
+      "inherits": "base",
+      "vendor": { "jetbrains.com/clion": { "toolchain": "MinGW" } }
+    }
+  ],
+  "buildPresets": [
+    { "name": "default", "configurePreset": "default" },
+    { "name": "edit", "configurePreset": "edit" }
+  ]
+}

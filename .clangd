@@ -1,0 +1,16 @@
+CompileFlags:
+  CompilationDatabase: build/edit
+  Remove:
+    - -fsanitize=address
+    - /fsanitize=address
+
+Diagnostics:
+  UnusedIncludes: Strict
+  MissingIncludes: Strict
+  Includes:
+    IgnoreHeader: [ 'hellforge_.*\.h' ]
+
+InlayHints:
+  Enabled: true
+  DeducedTypes: true
+  ParameterNames: true
